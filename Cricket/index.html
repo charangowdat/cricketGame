@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div id="buttonDiv">
+      <button id="buttonStart">Start</button>
+    </div>
+    <center>
+    <div id="twoButton">
+      <button id="batting">Batting</button><br><br>
+      <button id="bowling">Bowling</button>
+    </div>
+    <div id="firstBatting">
+      <div id="scoreBoard">
+      <span id="totScore">Score:<strong><span id="score">0</span></strong></span><br>
+      <span id="targetScore">Target:<strong><span id="target">0</span></strong></span>
+      </div>
+
+      <div>
+        <h1 id="h1">Batting</h1>
+      </div>
+      <div id="player">
+        <h3>YOU</h3>
+      <button id="S1" onclick="youPlaying(1)"><b>1</b></button><br>
+      <button id="S2" onclick="youPlaying(2)"><b>2</b></button><br>
+      <button id="S3" onclick="youPlaying(3)"><b>3</b></button><br>
+      <button id="S4" onclick="youPlaying(4)"><b>4</b></button><br>
+      <button id="S5" onclick="youPlaying(5)"><b>5</b></button><br>
+      <button id="S6" onclick="youPlaying(6)"><b>6</b></button>
+      </div>
+
+      <div id="computer">
+        <h3>Computer</h3>
+      <button id="C1"><b>1</b></button><br>
+      <button id="C2"><b>2</b></button><br>
+      <button id="C3"><b>3</b></button><br>
+      <button id="C4"><b>4</b></button><br>
+      <button id="C5"><b>5</b></button><br>
+      <button id="C6"><b>6</b></button>
+      </div>
+
+    </div>
+    <div id="playerOut">
+      <h1>You Out!</h1>
+      <h2>Sore:<span id="nextInningTarget"> 0</span></h2>
+      <div>
+        <button id="playerOutButton">Bowling</button>
+      </div>
+    </div>
+
+    <div id="win"><h1>You Win</h1></div>
+    <div id="lose"><h1>You Lose</h1></div>
+    <div id="tie"><h1>Match Tie</h1></div>
+
+    <div id="restart">
+      <button id="buttonRestart" onclick="refreshPage()">Restart</button>
+    </div>
+    </center>
+    <script  src="script.js"></script>
+  </body>
+</html>
